@@ -11,8 +11,6 @@ class Solution:
         for num in nums:
             freq[num] += 1
 
-        print(freq)
-
         minimum_freq = sorted(freq.values(), reverse=True)[k - 1]
 
         for key, value in freq.items():
@@ -28,12 +26,8 @@ class Solution:
         for num in nums:
             freq[num] += 1
 
-        print(freq)
-
         for key, value in freq.items():
             my_list[value].append(key)
-
-        print(my_list)
 
         i = len(my_list) - 1
         while i >= 0:
